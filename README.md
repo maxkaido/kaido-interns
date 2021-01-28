@@ -18,7 +18,7 @@ git add -A
 
 git commit -m 'add a new intern'
 
-git push -u origin
+git push -u origin alice-smith
 
 ```
 
