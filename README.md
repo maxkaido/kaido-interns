@@ -5,16 +5,20 @@
 
 1. Fork https://github.com/maxkaido/kaido-interns
 
-2. Create a candidate file with assigned host
+2. Create a candidate file
 ```
 
 git clone <fork-repo>
 
 git checkout -b alice-smith
 
-echo intX.kaido.team > alice-smith.md
+touch alice-smith.md
 
-git push -u origin
+git add -A
+
+git commit -m 'add a new intern'
+
+git push -u origin alice-smith
 
 ```
 
