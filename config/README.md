@@ -1,0 +1,1 @@
+.byobu .SpaceVim.d .zshrc
