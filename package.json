@@ -1,0 +1,32 @@
+{
+  "name": "@ka1do/tools",
+  "version": "0.0.1",
+  "description": "Kaido Team Tools",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kaido-team/kaido-tools.git"
+  },
+  "author": "Max Kaido <maximkaido@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/kaido-team/kaido-tools/issues"
+  },
+  "homepage": "https://github.com/kaido-team/kaido-tools#readme",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "keywords": [
+    "telegram",
+    "ethereum",
+    "pair-programming",
+    "spacevim",
+    "vim",
+    "zsh",
+    "ohmyzsh",
+    "byobu",
+    "tmux",
+    "experiment"
+  ]
+}
