@@ -100,7 +100,7 @@ export EDITOR='nvim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias v="nvim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #
