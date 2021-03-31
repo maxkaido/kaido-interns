@@ -1,1 +1,2 @@
-export {}
+const A = 'A'
+export {A}

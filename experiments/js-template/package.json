@@ -1,0 +1,13 @@
+{
+  "name": "js-template",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nodemon --exec 'yarn mocha --recursive'"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "mocha": "^8.3.2"
+  }
+}
