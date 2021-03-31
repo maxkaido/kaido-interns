@@ -42,7 +42,7 @@ ZSH_THEME="random"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -70,7 +70,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git git-flow hitokoto lol pyenv web-search colorize zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -80,10 +80,9 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
 
 export EDITOR='nvim'
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -102,14 +101,16 @@ export EDITOR='nvim'
 # Example aliases
 alias v="nvim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+#
 #
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 export PATH="$PATH:`yarn global bin`"
 
-export PATH="/home/dev/.pyenv/bin:$PATH"                                                                                                                                                               
-eval "$(pyenv init -)"                                                                                                                                                                                
+export PATH="/home/dev/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+bindkey -s "^[OM" "^M"
