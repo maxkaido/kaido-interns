@@ -1,19 +1,19 @@
 {
-  "name": "@ka1do/tools",
+  "name": "@ka1do/kit",
   "version": "0.0.1",
-  "description": "Kaido Team Tools",
+  "description": "Kaido Kit",
   "main": "build/index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kaido-team/kaido-tools.git"
+    "url": "git+ssh://git@github.com/kaido-team/kaido-kit.git"
   },
   "author": "Max Kaido <maximkaido@gmail.com>",
   "license": "MIT",
   "private": false,
   "bugs": {
-    "url": "https://github.com/kaido-team/kaido-tools/issues"
+    "url": "https://github.com/kaido-team/kaido-kit/issues"
   },
-  "homepage": "https://github.com/kaido-team/kaido-tools#readme",
+  "homepage": "https://github.com/kaido-team/kaido-kit#readme",
   "scripts": {
     "test": "yarn test"
   },
