@@ -1,1 +1,1 @@
-# Kaido SDK
+# Kaido Kit
