@@ -114,3 +114,5 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 bindkey -s "^[OM" "^M"
+
+hitokoto
