@@ -39,6 +39,7 @@ default_height = 30
 
 [[layers]]
 name = "format"
+format_on_save= true
 
 [[layers]]
 name = "lang#javascript"
