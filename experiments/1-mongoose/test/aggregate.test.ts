@@ -72,5 +72,19 @@ describe("aggregate", function () {
       tx.transfers[0].from.should.equal("b");
       tx.transfers[1].from.should.equal("a");
     });
+
+    it("addToSet() should add new distinct transfers", async function () {
+      let tx = await Tx.create({
+        transfers: [{ from: "a", usd: 1 }],
+      });
+
+      tx.transfers.addToSet({ from: "a", usd: 2 });
+      tx.transfers.addToSet({ from: "a", usd: 2 });
+      await tx.save();
+      tx = await Tx.findById(tx.id);
+      assert.lengthOf(tx.transfers, 2);
+      tx.transfers[0].from.should.equal("b");
+      tx.transfers[1].from.should.equal("a");
+    });
   });
 });
