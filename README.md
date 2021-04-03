@@ -6,7 +6,11 @@
 
 ## interns
 
-## awesome resources
+# Resources
+
+## Tools
+
+- [Github Guides](https://guides.github.com/)
 
 ## Environment
 
