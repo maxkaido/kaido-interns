@@ -30,21 +30,47 @@ describe("aggregate", function () {
       Tx = connection.model("Tx", TxSchema);
     });
 
-    it("should create without transfers", async function () {
+    it("should create tx without transfers", async function () {
       const tx = await Tx.create({});
 
       assert.lengthOf(tx.transfers, 0);
     });
 
-    it("should create with transfers", async function () {
+    it("should create tx with transfers", async function () {
       const tx = await Tx.create({
         transfers: [
-          { from: "abc", usd: 10 },
-          { from: "cde", usd: 20 },
+          { from: "a", usd: 1 },
+          { from: "b", usd: 2 },
         ],
       });
 
-      assert.lengthOf(tx.transfers, 1);
+      assert.lengthOf(tx.transfers, 2);
+    });
+
+    it("push() should add new transfers to the end", async function () {
+      let tx = await Tx.create({
+        transfers: [{ from: "a", usd: 1 }],
+      });
+
+      tx.transfers.push({ from: "b", usd: 2 });
+      await tx.save();
+      tx = await Tx.findById(tx.id);
+      assert.lengthOf(tx.transfers, 2);
+      tx.transfers[0].from.should.equal("a");
+      tx.transfers[1].from.should.equal("b");
+    });
+
+    it("unshift() should add new transfers to the end", async function () {
+      let tx = await Tx.create({
+        transfers: [{ from: "a", usd: 1 }],
+      });
+
+      tx.transfers.unshift({ from: "b", usd: 2 });
+      await tx.save();
+      tx = await Tx.findById(tx.id);
+      assert.lengthOf(tx.transfers, 2);
+      tx.transfers[0].from.should.equal("b");
+      tx.transfers[1].from.should.equal("a");
     });
   });
 });
