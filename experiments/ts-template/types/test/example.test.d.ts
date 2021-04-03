@@ -1,3 +1,2 @@
-declare const consola: any;
-declare const A: any;
+export {};
 //# sourceMappingURL=example.test.d.ts.map
