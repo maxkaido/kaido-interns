@@ -124,7 +124,7 @@ describe("aggregate", function () {
         transfers: [{ from: "a", usd: 1 }],
       });
 
-      consola.info(tx);
+      // consola.info(tx);
 
       tx = await Tx.findOneAndUpdate(
         { _id: tx.id },
@@ -136,7 +136,7 @@ describe("aggregate", function () {
         },
         { new: true }
       );
-      consola.info(tx);
+      // consola.info(tx);
       assert.lengthOf(tx.transfers, 2);
     });
 
