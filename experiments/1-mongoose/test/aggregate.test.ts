@@ -140,7 +140,7 @@ describe("aggregate", function () {
       assert.lengthOf(tx.transfers, 2);
     });
 
-    it.only("should aggregate like a pro", async function () {
+    it("should aggregate like a pro", async function () {
       await Tx.deleteMany();
 
       await Tx.create({
