@@ -12,6 +12,7 @@ describe("aggregate", function () {
   describe("tx with transfers", function () {
     let Tx: any;
     const TxSchema = new mongoose.Schema({
+      slippage: { type: Number, index: true },
       transfers: [{ from: String, usd: Number }],
       dexes: [String],
     });
@@ -23,8 +24,8 @@ describe("aggregate", function () {
       const mongoOpts = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        // useFindAndModify: false,
-        // useCreateIndex: true,
+        useFindAndModify: false,
+        useCreateIndex: true,
       };
 
       const connection = await mongoose.createConnection(uri, mongoOpts);
@@ -116,6 +117,68 @@ describe("aggregate", function () {
 
       const index = tx.transfers.indexOf({ from: "a", usd: 1 });
       index.should.equal(-1);
+    });
+
+    it("findOneAndUpdate should rewrite doc with array of subdoc", async function () {
+      let tx = await Tx.create({
+        transfers: [{ from: "a", usd: 1 }],
+      });
+
+      consola.info(tx);
+
+      tx = await Tx.findOneAndUpdate(
+        { _id: tx.id },
+        {
+          transfers: [
+            { from: "a", usd: 1 },
+            { from: "b", usd: 2 },
+          ],
+        },
+        { new: true }
+      );
+      consola.info(tx);
+      assert.lengthOf(tx.transfers, 2);
+    });
+
+    it.only("should aggregate like a pro", async function () {
+      await Tx.deleteMany();
+
+      await Tx.create({
+        slippage: 20,
+        transfers: [
+          { from: "a", usd: 1 },
+          { from: "a", usd: 2 },
+        ],
+      });
+
+      await Tx.create({
+        slippage: 10,
+        transfers: [
+          { from: "a", usd: 1 },
+          { from: "b", usd: 2 },
+          { from: "c", usd: 3 },
+        ],
+      });
+
+      await Tx.create({
+        slippage: 30,
+        transfers: [
+          { from: "b", usd: 1 },
+          { from: "a", usd: 2 },
+        ],
+      });
+
+      const aggr = await Tx.aggregate()
+        .match({ slippage: { $gte: 20 } })
+        .unwind("transfers")
+        .group({ _id: "$transfers.from", usd: { $sum: "$transfers.usd" } })
+        .sort({ usd: -1 });
+
+      assert.lengthOf(aggr, 2);
+      aggr[0].should.deep.equal({ _id: "a", usd: 5 });
+      aggr[1].should.deep.equal({ _id: "b", usd: 1 });
+
+      // consola.info(aggr);
     });
   });
 });
