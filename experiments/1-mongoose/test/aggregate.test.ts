@@ -84,6 +84,7 @@ describe("aggregate", function () {
       tx = await Tx.findById(tx.id);
       assert.lengthOf(tx.dexes, 1);
     });
+
     it("addToSet() should not distinct objects with props", async function () {
       let tx = await Tx.create({
         transfers: [{ from: "a", usd: 1 }],
@@ -94,6 +95,27 @@ describe("aggregate", function () {
       await tx.save();
       tx = await Tx.findById(tx.id);
       assert.lengthOf(tx.transfers, 3);
+    });
+
+    it("indexOf() should find primitive", async function () {
+      let tx = await Tx.create({
+        dexes: ["dex1", "dex2"],
+      });
+
+      const index = tx.dexes.indexOf("dex2");
+      index.should.equal(1);
+    });
+
+    it("indexOf() should not find object with props", async function () {
+      let tx = await Tx.create({
+        transfers: [
+          { from: "a", usd: 1 },
+          { from: "a", usd: 2 },
+        ],
+      });
+
+      const index = tx.transfers.indexOf({ from: "a", usd: 1 });
+      index.should.equal(-1);
     });
   });
 });
