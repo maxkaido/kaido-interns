@@ -527,7 +527,7 @@
         "affectsGlobalScope": true
       },
       "../test/aggregate.test.ts": {
-        "version": "7bd713fc66a73fc00c9884fef38476df0283a73048eb90815f9e4248c9ef8b55",
+        "version": "92017cd970b3d1388169732f245a7cfac2e3c02d5f1d375e5a89fcfcd67f2b67",
         "signature": "e4c6239ad21d3765c49ccb2d3683d7941c3d7f8d56820168f5491f4451fbb46d",
         "affectsGlobalScope": false
       },

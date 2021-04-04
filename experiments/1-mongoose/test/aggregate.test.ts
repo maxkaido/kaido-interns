@@ -13,6 +13,7 @@ describe("aggregate", function () {
     let Tx: any;
     const TxSchema = new mongoose.Schema({
       transfers: [{ from: String, usd: Number }],
+      dexes: [String],
     });
 
     before(async function () {
@@ -73,7 +74,17 @@ describe("aggregate", function () {
       tx.transfers[1].from.should.equal("a");
     });
 
-    it("addToSet() should add new distinct transfers", async function () {
+    it("addToSet() should distinct primitives", async function () {
+      let tx = await Tx.create({
+        dexes: ["dex1"],
+      });
+
+      tx.dexes.addToSet("dex1");
+      await tx.save();
+      tx = await Tx.findById(tx.id);
+      assert.lengthOf(tx.dexes, 1);
+    });
+    it("addToSet() should not distinct objects with props", async function () {
       let tx = await Tx.create({
         transfers: [{ from: "a", usd: 1 }],
       });
@@ -82,9 +93,7 @@ describe("aggregate", function () {
       tx.transfers.addToSet({ from: "a", usd: 2 });
       await tx.save();
       tx = await Tx.findById(tx.id);
-      assert.lengthOf(tx.transfers, 2);
-      tx.transfers[0].from.should.equal("b");
-      tx.transfers[1].from.should.equal("a");
+      assert.lengthOf(tx.transfers, 3);
     });
   });
 });
