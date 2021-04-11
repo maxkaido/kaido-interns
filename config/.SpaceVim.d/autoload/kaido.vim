@@ -1,6 +1,6 @@
 function! kaido#before() abort
     let g:neoformat_enabled_typescript=['prettier']
-    let g:spacevim_colorscheme = 'molokai'
+    let g:spacevim_colorscheme = 'nord'
     let g:spacevim_colorscheme_bg = 'dark'
 endfunction
 
