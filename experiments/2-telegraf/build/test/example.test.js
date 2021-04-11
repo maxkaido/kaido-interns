@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("chai").should();
+const src_1 = require("../src");
+it("test Bot should exist", function () {
+    src_1.Bot.should.exist;
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXhhbXBsZS50ZXN0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vdGVzdC9leGFtcGxlLnRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUMsTUFBTSxFQUFFLENBQUM7QUFFekIsZ0NBQTZCO0FBRTdCLEVBQUUsQ0FBQyx1QkFBdUIsRUFBRTtJQUMxQixTQUFHLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQztBQUNuQixDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBjb25zb2xhIGZyb20gXCJjb25zb2xhXCI7XG5cbnJlcXVpcmUoXCJjaGFpXCIpLnNob3VsZCgpO1xuXG5pbXBvcnQgeyBCb3QgfSBmcm9tIFwiLi4vc3JjXCI7XG5cbml0KFwidGVzdCBCb3Qgc2hvdWxkIGV4aXN0XCIsIGZ1bmN0aW9uICgpIHtcbiAgQm90LnNob3VsZC5leGlzdDtcbn0pO1xuIl19
