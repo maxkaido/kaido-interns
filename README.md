@@ -1,12 +1,12 @@
 # Kaido Kit
 
-## config
+## Configs
 
-## experiments
+## Experiments
 
-## interns
+## Praktikum
 
-# Resources
+# Usefull Links
 
 ## Tools
 
@@ -32,20 +32,28 @@
 
 - [Gogh](https://mayccoll.github.io/Gogh/) - Color Schemes for Gnome Terminal
 
-https://github.com/concise/tmux-keylogger
-https://github.com/kernc/logkeys
-https://github.com/brannondorsey/letterpress
-https://i3wm.org/
-https://github.com/Naereen/uLogMe
-https://gitlab.com/screenkey/screenkey#no-output-in-gnome-terminal
+## Misc
 
-https://github.com/thoughtbot/vimulator
-http://thoughtbot.github.io/vimulator/
+- https://github.com/concise/tmux-keylogger
 
-http://vimcasts.org/blog/2013/05/vimprint---a-vim-keystroke-parser/
+- https://github.com/kernc/logkeys
 
-http://www.vimgolf.com/
+- https://github.com/brannondorsey/letterpress
 
-http://manpages.ubuntu.com/manpages/xenial/en/man8/logkeys.8.html
+- https://i3wm.org/
 
-https://www.docker.com/101-tutorial
+- https://github.com/Naereen/uLogMe
+
+- https://gitlab.com/screenkey/screenkey#no-output-in-gnome-terminal
+
+- https://github.com/thoughtbot/vimulator
+
+- http://thoughtbot.github.io/vimulator/
+
+- http://vimcasts.org/blog/2013/05/vimprint---a-vim-keystroke-parser/
+
+- http://www.vimgolf.com/
+
+- http://manpages.ubuntu.com/manpages/xenial/en/man8/logkeys.8.html
+
+- https://www.docker.com/101-tutorial
