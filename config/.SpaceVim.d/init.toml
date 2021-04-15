@@ -58,8 +58,9 @@ lint_on_the_fly = false
 [[layers]]
 name = "debug"
 
-# [[layers]]
-  # name = "lsp"
+[[layers]]
+  name = "lang#markdown"
+  enabled_formater = ["prettier"]
 
 [[layers]]
   name = "lang#html"
