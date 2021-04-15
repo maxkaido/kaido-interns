@@ -226,8 +226,13 @@
         "signature": "11a26d4e50979bd2ecc37d0362264f61260f8608d74519204e3d7d794649efae",
         "affectsGlobalScope": false
       },
+      "../node_modules/brain.js/src/index.d.ts": {
+        "version": "4811f4d0e90c861a33bedf1539917d5728ff0da10bae76c967701012f67cf00f",
+        "signature": "4811f4d0e90c861a33bedf1539917d5728ff0da10bae76c967701012f67cf00f",
+        "affectsGlobalScope": false
+      },
       "../test/example.test.ts": {
-        "version": "50f9aaa696d2f9aff51ebe6cf271f017e6ccda9dab1fe2d3449e100f6e5c2763",
+        "version": "7196fe131e991230fd1c80a76d3810e1fd1663d067e419954f0e2f09f1a6ad7e",
         "signature": "430486f74fedcd45f8033a94215efc7cb9f1b7b46c640e57a7eabd1b2ff63a09",
         "affectsGlobalScope": false
       },
@@ -510,14 +515,11 @@
       "inlineSources": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "pathsBasePath": "/home/dev/projects/kaido/kaido-kit/experiments/ts-template",
+      "pathsBasePath": "/home/dev/projects/kaido/kaido-kit/experiments/6-brainjs",
       "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
-      "../../node_modules/consola/types/consola.d.ts": [
-        "../node_modules/@types/node/util.d.ts"
-      ],
       "../node_modules/@types/node/assert.d.ts": [
         "../node_modules/@types/node/assert.d.ts"
       ],
@@ -748,7 +750,11 @@
       ],
       "../test/example.test.ts": [
         "../../node_modules/consola/types/consola.d.ts",
+        "../node_modules/brain.js/src/index.d.ts",
         "../src/index.ts"
+      ],
+      "../../node_modules/consola/types/consola.d.ts": [
+        "../node_modules/@types/node/util.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -982,7 +988,6 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../../node_modules/consola/types/consola.d.ts",
       "../node_modules/@types/chai/index.d.ts",
       "../node_modules/@types/json-schema/index.d.ts",
       "../node_modules/@types/mocha/index.d.ts",
@@ -1032,6 +1037,7 @@
       "../node_modules/@types/node/wasi.d.ts",
       "../node_modules/@types/node/worker_threads.d.ts",
       "../node_modules/@types/node/zlib.d.ts",
+      "../node_modules/brain.js/src/index.d.ts",
       "../node_modules/typescript/lib/lib.dom.d.ts",
       "../node_modules/typescript/lib/lib.dom.iterable.d.ts",
       "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -1076,7 +1082,8 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/index.ts",
-      "../test/example.test.ts"
+      "../test/example.test.ts",
+      "../../node_modules/consola/types/consola.d.ts"
     ]
   },
   "version": "4.1.5"
