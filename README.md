@@ -57,3 +57,5 @@
 - http://manpages.ubuntu.com/manpages/xenial/en/man8/logkeys.8.html
 
 - https://www.docker.com/101-tutorial
+
+- https://github.com/97-things/97-things-every-programmer-should-know
