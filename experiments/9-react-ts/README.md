@@ -1,3 +1,7 @@
+# Max Notes
+
+was created with `yarn create react-app 9-react-ts --template typescript`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
