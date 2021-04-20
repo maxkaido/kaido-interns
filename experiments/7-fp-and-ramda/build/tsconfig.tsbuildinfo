@@ -231,6 +231,11 @@
         "signature": "430486f74fedcd45f8033a94215efc7cb9f1b7b46c640e57a7eabd1b2ff63a09",
         "affectsGlobalScope": false
       },
+      "../test/pureFunction.test.ts": {
+        "version": "e45249bd28b881bae10cd9c5b0ac25e95abed34cc71f08ead4d50f8f201d2341",
+        "signature": "4f954bc642237e07b99463d330ad04e780f5a245d2226fe0d7d3db0cebcb4c02",
+        "affectsGlobalScope": true
+      },
       "../node_modules/@types/chai/index.d.ts": {
         "version": "e9cf450600c496a87ab96d288157b79be6c193e8623bd93553d5d64755940dea",
         "signature": "e9cf450600c496a87ab96d288157b79be6c193e8623bd93553d5d64755940dea",
@@ -510,14 +515,11 @@
       "inlineSources": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "pathsBasePath": "/home/dev/projects/kaido/kaido-kit/experiments/ts-template",
+      "pathsBasePath": "/home/dev/projects/kaido/kaido-kit/experiments/7-fp-and-ramda",
       "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
-      "../../node_modules/consola/types/consola.d.ts": [
-        "../node_modules/@types/node/util.d.ts"
-      ],
       "../node_modules/@types/node/assert.d.ts": [
         "../node_modules/@types/node/assert.d.ts"
       ],
@@ -749,6 +751,9 @@
       "../test/example.test.ts": [
         "../../node_modules/consola/types/consola.d.ts",
         "../src/index.ts"
+      ],
+      "../../node_modules/consola/types/consola.d.ts": [
+        "../node_modules/@types/node/util.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -982,7 +987,6 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../../node_modules/consola/types/consola.d.ts",
       "../node_modules/@types/chai/index.d.ts",
       "../node_modules/@types/json-schema/index.d.ts",
       "../node_modules/@types/mocha/index.d.ts",
@@ -1076,7 +1080,9 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/index.ts",
-      "../test/example.test.ts"
+      "../test/example.test.ts",
+      "../test/pureFunction.test.ts",
+      "../../node_modules/consola/types/consola.d.ts"
     ]
   },
   "version": "4.1.5"
