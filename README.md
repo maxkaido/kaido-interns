@@ -59,3 +59,7 @@
 - https://www.docker.com/101-tutorial
 
 - https://github.com/97-things/97-things-every-programmer-should-know
+
+- https://guides.github.com/features/mastering-markdown/
+
+- https://www.30secondsofcode.org/
