@@ -1,3 +1,3 @@
-declare const A = "A";
-export { A };
+declare const getBlockNumber: () => Promise<number>;
+export { getBlockNumber };
 //# sourceMappingURL=index.d.ts.map

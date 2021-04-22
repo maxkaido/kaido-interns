@@ -1,6 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A = void 0;
-const A = 'A';
-exports.A = A;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsTUFBTSxDQUFDLEdBQUcsR0FBRyxDQUFBO0FBQ0wsY0FBQyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IEEgPSAnQSdcbmV4cG9ydCB7QX1cbiJdfQ==
+exports.getBlockNumber = void 0;
+const ethers_1 = require("ethers");
+const getBlockNumber = () => {
+    const provider = ethers_1.ethers.getDefaultProvider("https://eth.kaido.team");
+    return provider.getBlockNumber();
+};
+exports.getBlockNumber = getBlockNumber;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsbUNBQWdDO0FBRWhDLE1BQU0sY0FBYyxHQUFHLEdBQUcsRUFBRTtJQUMxQixNQUFNLFFBQVEsR0FBRyxlQUFNLENBQUMsa0JBQWtCLENBQUMsd0JBQXdCLENBQUMsQ0FBQztJQUNyRSxPQUFPLFFBQVEsQ0FBQyxjQUFjLEVBQUUsQ0FBQztBQUNuQyxDQUFDLENBQUM7QUFFTyx3Q0FBYyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGV0aGVycyB9IGZyb20gXCJldGhlcnNcIjtcblxuY29uc3QgZ2V0QmxvY2tOdW1iZXIgPSAoKSA9PiB7XG4gIGNvbnN0IHByb3ZpZGVyID0gZXRoZXJzLmdldERlZmF1bHRQcm92aWRlcihcImh0dHBzOi8vZXRoLmthaWRvLnRlYW1cIik7XG4gIHJldHVybiBwcm92aWRlci5nZXRCbG9ja051bWJlcigpO1xufTtcblxuZXhwb3J0IHsgZ2V0QmxvY2tOdW1iZXIgfTtcbiJdfQ==
