@@ -1,10 +1,11 @@
 {
   "name": "3-bot-and-nuxt",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "dev7": "nuxt --hostname dev7.kaido.team",
+    "dev7:tunnel": "lt -p 5000 -s dev7-kaido-team -l dev7.kaido.team",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",

@@ -1,5 +1,3 @@
-// import { Telegraf } from 'telegraf'
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -46,11 +44,9 @@ export default {
   build: {},
 
   serverMiddleware: [
-    // {
-    // path: '/tgWebhook',
-    // handler: new Telegraf(
-    // botToken
-    // ).webhookCallback(webhookPath),
-    // },
+    {
+      path: '/bot',
+      handler: require('./bot.js')('/bot'),
+    },
   ],
 }
