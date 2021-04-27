@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "nodemon --exec 'yarn mocha build/test --recursive'",
-    "dev": "browser-sync ./static",
+    "dev": "browser-sync ./static -w",
     "dev:build": "tsc -w"
   },
   "devDependencies": {
