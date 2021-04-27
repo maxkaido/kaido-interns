@@ -42,4 +42,4 @@ setInterval(function () {
       //consola.info(res);
     });
   });
-}, 10000);
+}, 5000);
