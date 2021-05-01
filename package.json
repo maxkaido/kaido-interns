@@ -2,7 +2,7 @@
   "name": "@ka1do/kit",
   "version": "0.0.1",
   "description": "Kaido Kit",
-  "main": "build/index.js",
+  "main": "helpers/build/src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/kaido-team/kaido-kit.git"
