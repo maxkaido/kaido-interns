@@ -28,5 +28,8 @@
     "byobu",
     "tmux",
     "experiment"
-  ]
+  ],
+  "devDependencies": {
+    "eslint-plugin-html": "^6.1.2"
+  }
 }

@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">3-bot-and-nuxt-pwa</h1>
+      <h1 class="title">nuxt-pwa-ts</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -19,6 +19,14 @@
           class="button--grey"
         >
           GitHub
+        </a>
+        <a
+          href="/canvas-plus"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          Canvas Plus
         </a>
       </div>
     </div>
