@@ -129,4 +129,19 @@ img.fadeIn {
     opacity: 0;
   }
 }
+
+.button--blue {
+  display: inline-block;
+  /* font-size: 150%; */
+  border-radius: 4px;
+  border: 1px solid #1fa3b7;
+  color: #1fa3b7;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--blue:hover {
+  color: #fff;
+  background-color: #1fa3b7;
+}
 </style>
