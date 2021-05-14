@@ -1,6 +1,36 @@
 <template>
-  <div class="container">
-    <div></div>
+  <div>
+    <div
+      class="min-h-screen flex justify-center items-center text-center mx-auto"
+    >
+      <div class="row">
+        <div class="max-w-sm mx-auto p-4 bg-white rounded-lg">
+          <div id="logo">
+            <img
+              src="/kaidoteam.png"
+              alt=""
+              style="position: relative; width: 100%"
+            />
+            <img
+              alt=""
+              v-bind:src="imgUrl"
+              v-bind:class="{ fadeIn: fadeIn, fadeOut: !fadeIn }"
+            />
+          </div>
+        </div>
+        <div class="text-6xl font-light">kaido.team</div>
+        <div class="links">
+          <a
+            href="https://t.me/kaidoteambot"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button--blue"
+          >
+            Start the bot
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -11,10 +41,16 @@ require('../static/canvas-plus.js')
 consola.info('canvas-plus component loaded')
 
 export default Vue.extend({
+  data() {
+    return {
+      imgUrl: '/kaidoteam.png',
+      fadeIn: true,
+    }
+  },
   mounted() {
     const canvas = new (window as any).CanvasPlus()
 
-    setTimeout(function () {
+    setInterval(function () {
       kaido()
     }, 10000)
     const kaido = () => {
@@ -44,20 +80,12 @@ export default Vue.extend({
 
         canvas.write(
           { format: 'png', quality: 90 },
-          function (err: Error, buf: Buffer) {
+          (err: Error, buf: Buffer) => {
             if (err) throw err
             const blob = new Blob([buf], { type: 'image/jpeg' })
             const objectUrl = URL.createObjectURL(blob)
-
-            // insert new image into DOM
-            const img = new Image()
-            img.src = objectUrl
-            document.body.appendChild(img)
-            // 'buf' will be a binary buffer containing final image...
-            /* const curvedFilePath = path.resolve('kaidoteam_curved.png') */
-            /* require('fs').writeFileSync(curvedFilePath, buf) */
-
-            /* return res.sendFile(curvedFilePath) */
+            this.imgUrl = objectUrl
+            this.fadeIn = !this.fadeIn
           }
         )
       })
@@ -66,4 +94,39 @@ export default Vue.extend({
 })
 </script>
 
-<style></style>
+<style>
+#logo {
+  position: relative;
+}
+
+img.fadeOut {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+img.fadeIn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 10s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
