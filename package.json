@@ -1,6 +1,6 @@
 {
   "name": "@ka1do/kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Kaido Kit",
   "main": "helpers/build/src/index.js",
   "repository": {
