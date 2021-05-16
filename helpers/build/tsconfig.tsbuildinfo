@@ -827,8 +827,8 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "aee9a7a4cbc924169979dc658c7016ed69292764cd4f0186eb2ade0a81d5bb28",
-        "signature": "ba4f6663521067f78b7889bd89c06b99b62749c238a55b173a0101aac38b5d0f",
+        "version": "4f4c7f0c120e830f63bd66dd1acead98bb2953943ffac9706d5a14b474f5eb7d",
+        "signature": "2c22cf9b9cbd578b2196f6ee89a504f259e954c9828f4668726d81eb6a209201",
         "affectsGlobalScope": false
       },
       "../node_modules/consola/types/consola.d.ts": {
@@ -842,7 +842,7 @@
         "affectsGlobalScope": true
       },
       "../test/index.test.ts": {
-        "version": "1d654a406bbe7433588f50e974d7dbdbd91bf5db6118d6607431a32fee0574e6",
+        "version": "5412f65f486a0836c896057425f0449c4961395ba224b8a7e843b8973b1902a9",
         "signature": "8b8ff3ac6a533fdfd68ca0f9c056c4a0f88dd9cd14c972d61ed643a7bcf7a887",
         "affectsGlobalScope": false
       },
