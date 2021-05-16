@@ -1,8 +1,0 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-require('chai').should();
-const src_1 = require("../src");
-it('test A should be A', function () {
-    src_1.A.should.equal('A');
-});
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXhhbXBsZS50ZXN0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vdGVzdC9leGFtcGxlLnRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUMsTUFBTSxFQUFFLENBQUM7QUFFekIsZ0NBQXdCO0FBRXhCLEVBQUUsQ0FBQyxvQkFBb0IsRUFBRTtJQUN2QixPQUFDLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsQ0FBQTtBQUNyQixDQUFDLENBQUMsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBjb25zb2xhIGZyb20gJ2NvbnNvbGEnXG5cbnJlcXVpcmUoJ2NoYWknKS5zaG91bGQoKTtcblxuaW1wb3J0IHtBfSBmcm9tICcuLi9zcmMnXG5cbml0KCd0ZXN0IEEgc2hvdWxkIGJlIEEnLCBmdW5jdGlvbiAoKSB7XG4gIEEuc2hvdWxkLmVxdWFsKCdBJylcbn0pXG4iXX0=

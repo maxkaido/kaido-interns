@@ -221,20 +221,35 @@
         "signature": "2639b5355de6e02d55c8e258892938b227fe5c2391cd087c02b59f63a117d477",
         "affectsGlobalScope": false
       },
+      "../test/pureFunction.test.ts": {
+        "version": "e45249bd28b881bae10cd9c5b0ac25e95abed34cc71f08ead4d50f8f201d2341",
+        "signature": "4f954bc642237e07b99463d330ad04e780f5a245d2226fe0d7d3db0cebcb4c02",
+        "affectsGlobalScope": true
+      },
       "../../node_modules/consola/types/consola.d.ts": {
         "version": "11a26d4e50979bd2ecc37d0362264f61260f8608d74519204e3d7d794649efae",
         "signature": "11a26d4e50979bd2ecc37d0362264f61260f8608d74519204e3d7d794649efae",
         "affectsGlobalScope": false
       },
-      "../test/example.test.ts": {
-        "version": "50f9aaa696d2f9aff51ebe6cf271f017e6ccda9dab1fe2d3449e100f6e5c2763",
-        "signature": "430486f74fedcd45f8033a94215efc7cb9f1b7b46c640e57a7eabd1b2ff63a09",
+      "../node_modules/ts-toolbelt/out/index.d.ts": {
+        "version": "9df147746b0cbd11d022b564e6fdd43ac79b643dc579d2123317ee01cc4f0d70",
+        "signature": "9df147746b0cbd11d022b564e6fdd43ac79b643dc579d2123317ee01cc4f0d70",
         "affectsGlobalScope": false
       },
-      "../test/pureFunction.test.ts": {
-        "version": "e45249bd28b881bae10cd9c5b0ac25e95abed34cc71f08ead4d50f8f201d2341",
-        "signature": "4f954bc642237e07b99463d330ad04e780f5a245d2226fe0d7d3db0cebcb4c02",
-        "affectsGlobalScope": true
+      "../node_modules/@types/ramda/tools.d.ts": {
+        "version": "2add849f0826717a2d8ead405176e5dc0b505d29c10c7c40cc83aa4b4941faa2",
+        "signature": "2add849f0826717a2d8ead405176e5dc0b505d29c10c7c40cc83aa4b4941faa2",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/ramda/index.d.ts": {
+        "version": "50147bdeba3970cda048a2c44076902a568cfd20dd592ae920257ca0bac8dfc0",
+        "signature": "50147bdeba3970cda048a2c44076902a568cfd20dd592ae920257ca0bac8dfc0",
+        "affectsGlobalScope": false
+      },
+      "../test/ramda.test.ts": {
+        "version": "e906c6aa02e2e8472474124a9f26810502e9bf64a7e8e983bccc77cadaf9b1ed",
+        "signature": "c15bb78d22097c03db988ae2873049d5c8f27d3f2a35a40c0a8ca36530a41766",
+        "affectsGlobalScope": false
       },
       "../node_modules/@types/chai/index.d.ts": {
         "version": "e9cf450600c496a87ab96d288157b79be6c193e8623bd93553d5d64755940dea",
@@ -748,9 +763,19 @@
         "../node_modules/@types/node/stream.d.ts",
         "../node_modules/@types/node/zlib.d.ts"
       ],
-      "../test/example.test.ts": [
+      "../node_modules/@types/ramda/index.d.ts": [
+        "../node_modules/@types/ramda/tools.d.ts",
+        "../node_modules/ts-toolbelt/out/index.d.ts"
+      ],
+      "../node_modules/@types/ramda/tools.d.ts": [
+        "../node_modules/ts-toolbelt/out/index.d.ts"
+      ],
+      "../node_modules/ts-toolbelt/out/index.d.ts": [
+        "../node_modules/ts-toolbelt/out/index.d.ts"
+      ],
+      "../test/ramda.test.ts": [
         "../../node_modules/consola/types/consola.d.ts",
-        "../src/index.ts"
+        "../node_modules/@types/ramda/index.d.ts"
       ],
       "../../node_modules/consola/types/consola.d.ts": [
         "../node_modules/@types/node/util.d.ts"
@@ -984,6 +1009,19 @@
       "../node_modules/@types/node/zlib.d.ts": [
         "../node_modules/@types/node/stream.d.ts",
         "../node_modules/@types/node/zlib.d.ts"
+      ],
+      "../node_modules/@types/ramda/index.d.ts": [
+        "../node_modules/@types/ramda/tools.d.ts",
+        "../node_modules/ts-toolbelt/out/index.d.ts"
+      ],
+      "../node_modules/@types/ramda/tools.d.ts": [
+        "../node_modules/ts-toolbelt/out/index.d.ts"
+      ],
+      "../node_modules/ts-toolbelt/out/index.d.ts": [
+        "../node_modules/ts-toolbelt/out/index.d.ts"
+      ],
+      "../../node_modules/consola/types/consola.d.ts": [
+        "../node_modules/@types/node/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1036,6 +1074,9 @@
       "../node_modules/@types/node/wasi.d.ts",
       "../node_modules/@types/node/worker_threads.d.ts",
       "../node_modules/@types/node/zlib.d.ts",
+      "../node_modules/@types/ramda/index.d.ts",
+      "../node_modules/@types/ramda/tools.d.ts",
+      "../node_modules/ts-toolbelt/out/index.d.ts",
       "../node_modules/typescript/lib/lib.dom.d.ts",
       "../node_modules/typescript/lib/lib.dom.iterable.d.ts",
       "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -1080,8 +1121,8 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/index.ts",
-      "../test/example.test.ts",
       "../test/pureFunction.test.ts",
+      "../test/ramda.test.ts",
       "../../node_modules/consola/types/consola.d.ts"
     ]
   },
