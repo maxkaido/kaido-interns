@@ -247,7 +247,7 @@
         "affectsGlobalScope": false
       },
       "../test/ramda.test.ts": {
-        "version": "e906c6aa02e2e8472474124a9f26810502e9bf64a7e8e983bccc77cadaf9b1ed",
+        "version": "7c9a267158b524aa2e96f9502db8fb3e86e88e134ae78d79bb8759d846d2c0d1",
         "signature": "c15bb78d22097c03db988ae2873049d5c8f27d3f2a35a40c0a8ca36530a41766",
         "affectsGlobalScope": false
       },
