@@ -25,11 +25,12 @@
 - morgan
 - winston
 
-## Telegraf
+## Telegram
 
-- statsd
-- mixpanel
-- extending context
+- telegraf statsd
+- telegraf mixpanel
+- telegraf extending context
+- tdlib (Telegram Bot server)
 
 ## dokku
 
