@@ -17,7 +17,7 @@
   "main": "build/src",
   "scripts": {
     "build": "tsc",
-    "test": "yarn mocha build/test --recursive -c",
+    "test": "yarn mocha build/test --recursive -c --exit",
     "dev:test": "yarn mocha build/test --recursive --delay=100 -c -w",
     "dev:build": "tsc -w"
   },
