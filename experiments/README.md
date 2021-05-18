@@ -1,6 +1,4 @@
-# Experiments
-
-# Next
+# Todo Experiments
 
 ## Microservices
 
@@ -12,6 +10,15 @@
 
 - nextjs
 - nestjs
+- openapi
+- feedparser
+- spacevim
+- typedoc
+- google cloud NLP
+- yandex speachkit
+- ansible
+- autochangelog
+- tsdx
 
 ## Logging
 
@@ -30,4 +37,19 @@
 
 ## Databases
 
-- node postgresql
+- postgresql
+- graphql
+- sqlite3
+
+## Blockchain
+
+- btc client
+- link oracle
+- hyperledger
+- filecoin and cloudflare
+
+## Ethereum
+
+- hardhat
+- upgradable contracts
+- usm https://github.com/usmfum/USM
