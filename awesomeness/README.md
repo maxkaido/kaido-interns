@@ -53,3 +53,5 @@
 - https://www.30secondsofcode.org/
 
 - https://help.ubuntu.com/community/Beginners/BashScripting
+
+- https://developers.cloudflare.com/distributed-web/ethereum-gateway/interacting-with-the-eth-gateway
