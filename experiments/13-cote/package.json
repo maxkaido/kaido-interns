@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "cote": "^1.0.2"
+    "cote": "^1.0.2",
+    "dotenv": "^9.0.2"
   },
   "scripts": {
     "service": "nodemon time-service.js",
