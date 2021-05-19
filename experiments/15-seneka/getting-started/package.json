@@ -10,7 +10,8 @@
     "shop-stats": "node shop-stats.js --seneca.log.all",
     "math-pin": "node math-pin-service.js --speneca.log.all",
     "shop-service": "node shop-service.js --seneca.log.all",
-    "deploy:shop-service": "cd ../getting-started && git init && git add . && git commit -m 'latest' && git push dokku@prod4.kaido.team:seneca master:master -f && rm -rf .git"
+    "deploy:shop-service": "cd ../getting-started && rm -rf .git && git init && git add . && git commit -m 'latest' && git push dokku@prod4.kaido.team:seneca master:master -f && rm -rf .git",
+    "deploy:app-all": "cd ../getting-started && rm -rf .git && git init && git add . && git commit -m 'latest' && git push dokku@prod5.kaido.team:seneca master:master -f && rm -rf .git"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
