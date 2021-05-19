@@ -19,7 +19,7 @@ var seneca = require("seneca")()
   .use("entity")
   .use("api-all")
   .client({ host: "dev7.kaido.team", type: "tcp", pin: "role:math" })
-  .client({ host: "dev6.kaido.team", port: 9002, pin: "role:shop" });
+  .client({ host: "seneca1.kaido.team", port: 80, pin: "role:shop" });
 
 // create a dummy product
 seneca.act(
