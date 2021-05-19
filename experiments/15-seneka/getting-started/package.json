@@ -6,6 +6,8 @@
   "license": "MIT",
   "scripts": {
     "app-all": "node app-all.js --seneca.log.all",
+    "shop-stats": "node shop-stats.js --seneca.log.all",
+    "math-pin": "node math-pin-service.js --seneca.log.all",
     "shop-service": "node shop-service.js --seneca.log.all"
   },
   "dependencies": {

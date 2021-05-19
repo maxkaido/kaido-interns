@@ -1,8 +1,7 @@
-require( 'seneca' )()
+require("seneca")()
 
-  .use( 'math' )
+  .use("math")
 
   // listen for role:math messages
   // IMPORTANT: must match client
-  .listen( { type:'tcp', pin:'role:math' } )
-
+  .listen({ host: "dev7.kaido.team", type: "tcp", pin: "role:math" });
