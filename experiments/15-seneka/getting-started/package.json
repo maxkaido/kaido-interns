@@ -5,13 +5,16 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "start": "node index.js --seneca.log.all",
     "app-all": "node app-all.js --seneca.log.all",
     "shop-stats": "node shop-stats.js --seneca.log.all",
-    "math-pin": "node math-pin-service.js --seneca.log.all",
-    "shop-service": "node shop-service.js --seneca.log.all"
+    "math-pin": "node math-pin-service.js --speneca.log.all",
+    "shop-service": "node shop-service.js --seneca.log.all",
+    "deploy:shop-service": "cd ../getting-started && git init && git add . && git commit -m 'latest' && git push dokku@prod4.kaido.team:seneca master:master -f"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
+    "dotenv": "^9.0.2",
     "express": "^4.13.1",
     "seneca": "2.0.0",
     "seneca-entity": "0.0.1",

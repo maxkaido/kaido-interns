@@ -1,7 +1,7 @@
 require("seneca")()
   .use("entity")
   .use("shop")
-  .listen({ host: "dev6.kaido.team", port: 9002, pin: "role:shop" })
+  .listen({ host: "0.0.0.0", port: 5000, pin: "role:shop" })
   .client({
     host: "dev7.kaido.team",
     port: 9003,
