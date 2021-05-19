@@ -1,2 +1,3 @@
 service: yarn service
 client: yarn client
+web: yarn client
