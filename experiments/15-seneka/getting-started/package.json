@@ -5,7 +5,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "app-all": "node app-all.js --seneca.log.all"
+    "app-all": "node app-all.js --seneca.log.all",
+    "shop-service": "node shop-service.js --seneca.log.all"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
