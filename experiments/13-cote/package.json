@@ -13,7 +13,7 @@
     "service": "node index.js",
     "client": "TYPE=CLIENT node index.js",
     "start": "node index.js",
-    "deploy:service": "cd ../13-cote/ && git init && git add . && git commit -m 'latest' && git push dokku@prod4.kaido.team:cote-service master:master -f && rm -rf .git",
-    "deploy:client": "cd ../13-cote/ && git init && git add . && git commit -m 'latest' && git push dokku@prod5.kaido.team:cote-client master:master -f && rm -rf .git"
+    "deploy:service": "cd ../13-cote/ && git init && git add . && git commit -m 'latest' && git push dokku@prod4.kaido.team:cote master:master -f && rm -rf .git",
+    "deploy:client": "cd ../13-cote/ && git init && git add . && git commit -m 'latest' && git push dokku@prod5.kaido.team:cote master:master -f && rm -rf .git"
   }
 }
