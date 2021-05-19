@@ -8,7 +8,7 @@ require("seneca")()
     respond();
   })
   .listen({
-    host: "dev7.kaido.team",
+    host: "0.0.0.0",
     port: 9003,
     pin: "role:shop,info:purchase",
   });
