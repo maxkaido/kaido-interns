@@ -2,7 +2,6 @@
 
 ## Microservices
 
-- cote
 - actionhero
 - seneca
 
@@ -54,3 +53,7 @@
 - hardhat
 - upgradable contracts
 - usm https://github.com/usmfum/USM
+
+# Completed
+
+- cote
