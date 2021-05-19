@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const cote = require("cote");
 const client = new cote.Requester({ name: "Client" });
 
