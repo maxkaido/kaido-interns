@@ -1,4 +1,4 @@
-const cote = require("cote", { broadcast: "95.216.205.117" });
+const cote = require("cote");
 const client = new cote.Requester({ name: "Client" });
 
 client.send({ type: "time" }, (time) => {

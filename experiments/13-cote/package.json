@@ -5,5 +5,9 @@
   "license": "MIT",
   "dependencies": {
     "cote": "^1.0.2"
+  },
+  "scripts": {
+    "service": "COTE_DISCOVERY_REDIS_URL=redis://:4e4ee7451f050bc35459b599dfd39210420c73433ca33f5b0294d0cea417806f@dev7.kaido.team:18301 DISCOVERY_HOSTNAME=dev7.kaido.team nodemon time-service.js",
+    "client": "COTE_DISCOVERY_REDIS_URL=redis://:4e4ee7451f050bc35459b599dfd39210420c73433ca33f5b0294d0cea417806f@dev7.kaido.team:18301 DISCOVERY_HOSTNAME=dev7.kaido.team nodemon client.js"
   }
 }
