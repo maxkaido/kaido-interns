@@ -7,7 +7,12 @@ require("seneca")()
 
   // send any role:math patterns out over the network
   // IMPORTANT: must match listening service
-  .client({ host: "dev7.kaido.team", type: "tcp", pin: "role:math" })
+  .client({
+    host: "prod4.kaido.team",
+    port: 10201,
+    type: "tcp",
+    pin: "role:math",
+  })
 
   // executed remotely
   .act("role:math,cmd:sum,left:1,right:2", console.log)
