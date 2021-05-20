@@ -9,7 +9,7 @@ require("seneca")()
   // IMPORTANT: must match listening service
   .client({
     host: "prod4.kaido.team",
-    port: 10201,
+    port: 5000,
     type: "tcp",
     pin: "role:math",
   })
