@@ -221,9 +221,9 @@
         "signature": "2639b5355de6e02d55c8e258892938b227fe5c2391cd087c02b59f63a117d477",
         "affectsGlobalScope": false
       },
-      "../test/pureFunction.test.ts": {
-        "version": "e45249bd28b881bae10cd9c5b0ac25e95abed34cc71f08ead4d50f8f201d2341",
-        "signature": "4f954bc642237e07b99463d330ad04e780f5a245d2226fe0d7d3db0cebcb4c02",
+      "../test/mylib.test.ts": {
+        "version": "236d943a1a60dbf8e29ea4cafb202c309d9f27aac4e5853ad8d449f0cd2bc5d8",
+        "signature": "fc0b83e9813ab8e52f0804ec5233bde606a84fd64ff980780bb0c09510456861",
         "affectsGlobalScope": true
       },
       "../../node_modules/consola/types/consola.d.ts": {
@@ -1121,7 +1121,7 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/index.ts",
-      "../test/pureFunction.test.ts",
+      "../test/mylib.test.ts",
       "../test/ramda.test.ts",
       "../../node_modules/consola/types/consola.d.ts"
     ]
